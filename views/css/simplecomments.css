@@ -1,0 +1,80 @@
+.simple-comments{
+    width: auto;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-left: 5%;
+}
+
+.simplecomments-avatar{
+    margin-right: 5px;
+}
+.simple-rate {
+    float: left;
+    height:40px;
+    padding: 0 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+.simple-rate:not(:checked) > input {
+    position:absolute;
+    opacity: 0;
+}
+.simple-rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:35px;
+    color:#ccc;
+}
+.simple-rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.simple-rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.simple-rate:not(:checked) > label:hover,
+.simple-rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.simple-rate > input:checked + label:hover,
+.simple-rate > input:checked + label:hover ~ label,
+.simple-rate > input:checked ~ label:hover,
+.simple-rate > input:checked ~ label:hover ~ label,
+.simple-rate > label:hover ~ input:checked ~ label {
+    color: #e0b20c;
+}
+
+.simple-star {
+    font-size: 20px;
+    color: #ffc700;  
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.simple-uncheck-star {
+    color:#ccc;   
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.product-miniature .product-description {
+    height: 80px;
+}
+#products .product-description{
+    height: 80px;
+}
+.simple-grade {
+    text-align: center;
+    font-size: 19px;
+}
+
+.simple-star{
+    height: 35px;
+}
+
+.simple-row{
+    height: 40px;
+}
